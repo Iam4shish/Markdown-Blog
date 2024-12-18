@@ -36,4 +36,4 @@ app.get('/', async (req, res) => {
 
 app.use('/articles', articleRouter)
 
-app.listen('https://markdown-blog-svfo.onrender.com')
+app.listen(process.env.PORT || 5000)
